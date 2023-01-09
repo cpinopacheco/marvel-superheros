@@ -4,13 +4,13 @@ const CharactersContext = createContext();
 
 const CharactersProvider = ({ children }) => {
   const [fetchData, setFetchData] = useState([]);
+  const [offset, setOffset] = useState(0);
 
-  const url =
-    "https://gateway.marvel.com/v1/public/characters?ts=1&apikey=23f8750280431a7ce4afeb0f45253fd4&hash=aaca0d59a344b878a020191929de0fb5&offset=40";
+  const url = `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=23f8750280431a7ce4afeb0f45253fd4&hash=aaca0d59a344b878a020191929de0fb5&offset=${offset}`;
 
   useEffect(() => {
     getCharacters();
-  }, []);
+  }, [offset]);
 
   const getCharacters = async () => {
     try {
@@ -26,7 +26,7 @@ const CharactersProvider = ({ children }) => {
     }
   };
 
-  const data = { fetchData };
+  const data = { fetchData, offset, setOffset };
 
   return (
     <CharactersContext.Provider value={data}>
