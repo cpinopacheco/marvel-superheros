@@ -1,0 +1,6 @@
+1- Limpiar el proyecto para comenzar a trabajar
+2- Crear Componentes principales (header, navbar, footer, etc)
+3- Crear el layout principal 
+4- Crear componentes de páginas
+5- crear el enrutador
+6-

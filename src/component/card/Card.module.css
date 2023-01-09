@@ -1,0 +1,22 @@
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ffffff90;
+  padding: 1rem;
+  border-radius: 30px;
+  background-color: #d3d3d3;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.name {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
