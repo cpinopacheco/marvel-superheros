@@ -20,7 +20,7 @@ const Pagination = () => {
   return (
     <div className={styles.containerPagination}>
       <a
-        href="#section-test"
+        href="#containerCharactersSection"
         className={`${styles.paginationButton} ${
           offset === 0 && styles.disabled
         }`}
@@ -30,7 +30,7 @@ const Pagination = () => {
       </a>
       <p className={styles.page}>Página: {page}</p>
       <a
-        href="#section-test"
+        href="#containerCharactersSection"
         className={styles.paginationButton}
         onClick={nextPage}
       >

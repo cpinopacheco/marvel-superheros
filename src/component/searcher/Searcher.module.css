@@ -1,0 +1,42 @@
+.containerSearcher {
+  background-color: #d3d3d3;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80%;
+  max-width: 450px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .containerSearcher {
+    top: 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .containerSearcher {
+    top: 40px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.labelSearch {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.inputSearch {
+  width: 100%;
+  margin-top: 1rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}

@@ -1,17 +1,10 @@
 .containerPagination {
   background-color: var(--primary-color);
-  padding-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-
-@media (max-width: 400px) {
-  .containerPagination {
-    gap: 0.5rem;
-    font-size: 1.5rem;
-  }
+  padding-bottom: 2rem;
 }
 
 .paginationButton {
@@ -19,7 +12,7 @@
   text-decoration: none;
   color: var(--primary-color);
   padding: 10px 30px;
-  border: 1px solid;
+  border: 1px solid var(--primary-color);
   border-radius: 1000px;
   display: inline-block;
   transition: all 0.2s;
@@ -58,6 +51,13 @@
 .page {
   font-size: 1.5rem;
   color: #ffffff90;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .page {
+    display: block;
+  }
 }
 
 .disabled {

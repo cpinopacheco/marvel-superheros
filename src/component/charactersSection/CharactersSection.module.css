@@ -1,7 +1,26 @@
+.containerCharactersSection {
+  position: relative;
+}
+
 .containerCharacters {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: stretch center;
+  gap: 1.5rem;
+  padding: 6rem 2rem;
+}
+
+.mainContainer {
   background-color: var(--primary-color);
+}
+
+@media (min-width: 1137px) {
+  .containerCharacters {
+    width: 80%;
+  }
+
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+  }
 }
